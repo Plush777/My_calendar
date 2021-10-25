@@ -63,7 +63,7 @@ $(document).ready(function(){
 
     var calPrev = document.getElementsByClassName('calPrev');
     var calNext = document.getElementsByClassName('calNext');
-    var calToday = document.getElementsByClassName('.calToday');
+    var calToday = document.getElementsByClassName('calToday');
     function prevM(){
         date.setDate(1);
         date.setMonth(date.getMonth() - 1);
@@ -74,7 +74,7 @@ $(document).ready(function(){
         date.setMonth(date.getMonth() + 1);
         renderCalender();
     }
-    function today(){
+    function todayBack(){
         date = new Date();
         renderCalender();
     }
@@ -85,6 +85,6 @@ $(document).ready(function(){
 		calNext[i].addEventListener('click', nextM);
 	}
     for (var i = 0; i < calToday.length; i++) {
-		calToday[i].addEventListener('click', today);
+		calToday[i].addEventListener('click', todayBack);
 	}
 })
