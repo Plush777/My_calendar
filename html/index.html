@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/common.css" type="text/css">
+    <link rel="icon" href="../images/calendar.png" sizes="16x16">
+    <script type="text/javascript" src="../lib/jquery-1.12.4.js"></script>
+    <script src="../js/ui.js"></script>
+    <title>My calendar</title>
+</head>
+<body>
+    <div id="wrap">
+        <div class="calendar">
+            <div class="calHead">
+                <div class="dateTitle">
+                    <strong></strong>
+                </div>
+                <div class="calBtnArea">
+                    <button type="button" class="calPrev">&lt;
+                        <span class="hidden">이전</span>
+                    </button>
+                    <button type="button" class="calToday">
+                        <span>Today</span>
+                    </button>
+                    <button type="button" class="calNext">&gt;
+                        <span class="hidden">다음</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">일</th>
+                            <th scope="col">월</th>
+                            <th scope="col">화</th>
+                            <th scope="col">수</th>
+                            <th scope="col">목</th>
+                            <th scope="col">금</th>
+                            <th scope="col">토</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                       <tr>
+                           <td colspan="7">
+                               <div class="dates"></div>
+                           </td>
+                       </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
